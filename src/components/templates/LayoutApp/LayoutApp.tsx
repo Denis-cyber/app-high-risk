@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Outlet } from "react-router-dom";
+import { Footer } from "components/organisms/Footer";
 
 import "./LayoutApp.scss";
 
@@ -11,22 +12,6 @@ export const LayoutApp: FC = () => (
       <img src='/assets/images/header/search.png' alt='search' />
     </header>
     <Outlet />
-    <footer className='footer'>
-      <button className='signIn'>
-        <span>Sign In</span>
-      </button>
-
-      <button className='menu-btn'>
-        <div className='menu-lines'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
-
-      <button className='signUp'>
-        <span>Sign Up</span>
-      </button>
-    </footer>
+    <Footer />
   </div>
 );

@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { StartPage } from "pages/StartPage";
-import { LayoutApp } from "components/LayoutApp";
+import { StartPage } from "components/pages/StartPage";
+import { LayoutApp } from "components/templates/LayoutApp";
 
 export const App = () => (
   <Routes>

@@ -1,0 +1,35 @@
+@import "fonts.scss";
+
+@mixin footerBtn($top, $background, $rotateX, $textColor, $boxShadow) {
+  width: 127px;
+  height: 55px;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  background: none;
+
+  &__bg {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: $top;
+    width: 100%;
+    height: 100%;
+    background-color: $background;
+    border-radius: 8px;
+    -webkit-transform: perspective(200px) rotateX($rotateX);
+
+    @if $boxShadow != none {
+      box-shadow: $boxShadow;
+    }
+  }
+
+  &__text {
+    color: $textColor;
+    font-family: MerriweatherSans, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,28 @@
+@import "styles/mixins.scss";
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../../public/assets/images/background.png");
+
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+
+  .icon-label {
+    margin: 0 8px;
+  }
+}
+
+.signIn {
+  @include footerBtn(0, rgba(79, 92, 105, 0.77), 35deg, #ffffff, none);
+}
+
+.signUp {
+  @include footerBtn(5%, rgb(252, 194, 17), -35deg, #000000, 0px 0px 24px rgba(255, 77, 0, 0.87));
+}
