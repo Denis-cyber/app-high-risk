@@ -1,0 +1,23 @@
+.modes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.game-slots {
+  background-color: #4d583b;
+}
+
+.live-casino {
+  background-color: #783d3d;
+}
+
+.promotions {
+  background-color: #36474d;
+}
+
+.tournaments {
+  background-color: #5b3d69;
+}

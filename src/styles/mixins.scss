@@ -1,5 +1,10 @@
 @import "fonts.scss";
 
+@mixin activeBtnEffect {
+  box-shadow: 0px 0px 24px rgba(255, 255, 229, 0.97);
+  opacity: 0.9;
+}
+
 @mixin footerBtn($top, $background, $rotateX, $textColor, $boxShadow) {
   width: 127px;
   height: 55px;
@@ -21,6 +26,10 @@
 
     @if $boxShadow != none {
       box-shadow: $boxShadow;
+    }
+
+    &:active {
+      @include activeBtnEffect;
     }
   }
 

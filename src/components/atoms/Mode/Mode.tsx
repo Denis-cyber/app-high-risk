@@ -1,10 +1,17 @@
 import { FC } from "react";
+import classNames from "classnames";
+import { IMode } from "types";
 
-export const Mode: FC = () => (
-  <div className='mode'>
-    <div className='mode-img'>
-      <img src='./assets/images/modes/game-slots.png' alt='game-slots' />
+import "./Mode.scss";
+
+interface IModeProps extends IMode {}
+
+export const Mode: FC<IModeProps> = ({ imgName, text, extraClassName, icon }) => (
+  <div className={classNames("mode", extraClassName)}>
+    <div className='mode__img'>
+      <img src={`./assets/images/modes/${imgName}.png`} alt={imgName} />
+      {icon}
     </div>
-    <span>Game slots</span>
+    <span>{text}</span>
   </div>
 );
