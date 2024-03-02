@@ -5,9 +5,17 @@
   align-items: center;
   flex-direction: column;
   background: linear-gradient(180.51deg, #faff00 2.6%, #be2929 60.69%), #ff0000;
-  margin: 5vh 5.5vw 7vh;
   padding: 2vh 0 3vh;
+  margin-bottom: 6vh;
   border-radius: 7px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url("~/public/assets/images/bonus/fire.png");
+    top: -54%;
+    left: 2%;
+  }
 
   &__title {
     font-family: Badaboom, sans-serif;
@@ -51,6 +59,53 @@
       font-weight: 700;
       position: relative;
       z-index: 3;
+    }
+  }
+
+  &__item {
+    width: 300px;
+    height: 85px;
+    margin-left: -35px;
+    border: none;
+    position: relative;
+    background: none;
+    margin-bottom: 5vh;
+
+    &:active {
+      .bonus__start__bg {
+        background-color: #9f0400;
+        border: 2px solid #fcc211;
+      }
+    }
+
+    &__bg {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(263.19deg, #dd1f41 -2.11%, #6a0c1d 100%);
+      border-radius: 10px;
+      // -webkit-transform: perspective(330px) rotateY(-15deg) perspective(330px) rotateX(15deg);
+      -webkit-transform: perspective(330px) rotateY(-15deg);
+      transition: 0.3s;
+    }
+
+    &__content {
+      font-family: MerriweatherSans, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      position: relative;
+      z-index: 3;
+
+      &__title {
+        color: #ffffff;
+      }
+
+      &__desc {
+        color: #fcc211;
+      }
     }
   }
 }
