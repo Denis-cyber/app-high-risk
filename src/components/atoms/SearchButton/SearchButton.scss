@@ -1,0 +1,14 @@
+@import "styles/mixins.scss";
+
+.search {
+  display: flex;
+  background-color: #e93e3a;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 10px;
+
+  &:active {
+    @include activeBtnEffect;
+  }
+}
