@@ -4,9 +4,7 @@ import "./BonusPopup.scss";
 
 export const BonusPopup: FC = () => (
   <div className='bonus'>
-    <div className='bonus__title'>
-      <img src='./assets/images/bonus/title.png' alt='bonus-title' />
-    </div>
+    <span className='bonus__title'>Deposit and play</span>
 
     <button className='bonus__start'>
       <span className='bonus__start__bg'></span>

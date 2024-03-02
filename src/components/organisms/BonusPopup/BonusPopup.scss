@@ -1,5 +1,4 @@
 @import "styles/fonts.scss";
-@import "styles/mixins.scss";
 
 .bonus {
   display: flex;
@@ -11,9 +10,11 @@
   border-radius: 7px;
 
   &__title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    font-family: Badaboom, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.06em;
+    color: #05071a;
+    margin-bottom: 2.5vh;
   }
 
   &__start {
