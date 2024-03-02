@@ -13,8 +13,8 @@
   &::before {
     position: absolute;
     content: url("~/public/assets/images/bonus/fire.png");
-    top: -54%;
-    left: 2%;
+    top: -28%;
+    left: 0%;
   }
 
   &__title {
@@ -63,8 +63,8 @@
   }
 
   &__item {
-    width: 300px;
-    height: 85px;
+    width: 310px;
+    height: 90px;
     margin-left: -35px;
     border: none;
     position: relative;
@@ -93,18 +93,36 @@
     }
 
     &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 3vw;
       font-family: MerriweatherSans, sans-serif;
       font-size: 14px;
       font-weight: 700;
       position: relative;
       z-index: 3;
 
-      &__title {
-        color: #ffffff;
+      &__text {
+        max-width: 42%;
+        text-align: start;
+
+        &__title {
+          color: #ffffff;
+        }
+
+        &__desc {
+          color: #fcc211;
+        }
       }
 
-      &__desc {
-        color: #fcc211;
+      &__toggle {
+        display: flex;
+        align-items: center;
+
+        &__vector {
+          margin-left: 4vw;
+        }
       }
     }
   }
