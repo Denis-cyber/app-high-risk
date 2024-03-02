@@ -1,0 +1,55 @@
+@import "styles/fonts.scss";
+@import "styles/mixins.scss";
+
+.bonus {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180.51deg, #faff00 2.6%, #be2929 60.69%), #ff0000;
+  margin: 5vh 5.5vw 7vh;
+  padding: 2vh 0 3vh;
+  border-radius: 7px;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__start {
+    width: 290px;
+    height: 55px;
+    border: none;
+    position: relative;
+    background: none;
+
+    &:active {
+      .bonus__start__bg {
+        background-color: #9f0400;
+        border: 2px solid #fcc211;
+      }
+    }
+
+    &__bg {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fcc211;
+      border-radius: 12px;
+      -webkit-transform: perspective(200px) rotateX(-15deg);
+      transition: 0.3s;
+    }
+
+    &__text {
+      color: #05071a;
+      font-family: MerriweatherSans, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      position: relative;
+      z-index: 3;
+    }
+  }
+}

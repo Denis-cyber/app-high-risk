@@ -5,13 +5,18 @@
   opacity: 0.9;
 }
 
-@mixin footerBtn($top, $background, $rotateX, $textColor, $boxShadow) {
+@mixin footerBtn($top, $background, $rotateX, $textColor, $boxShadow, $activeSelector) {
   width: 127px;
   height: 55px;
   border: none;
-  border-radius: 8px;
   position: relative;
   background: none;
+
+  &:active {
+    #{$activeSelector} {
+      @include activeBtnEffect;
+    }
+  }
 
   &__bg {
     position: absolute;
@@ -26,10 +31,6 @@
 
     @if $boxShadow != none {
       box-shadow: $boxShadow;
-    }
-
-    &:active {
-      @include activeBtnEffect;
     }
   }
 

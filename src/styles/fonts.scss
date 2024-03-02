@@ -1,5 +1,11 @@
 @font-face {
   font-family: "MerriweatherSans";
-  src: url("~/public/assets/fonts/MerriweatherSans-Bold.ttf");
+  src: url("~/public/assets/fonts/Merriweather/MerriweatherSans-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Badaboom";
+  src: url("~/public/assets/fonts/Badaboom/BADABB__.TTF");
   font-display: swap;
 }
