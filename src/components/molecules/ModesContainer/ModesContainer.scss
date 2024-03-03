@@ -1,9 +1,11 @@
 .modes {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   gap: 8px;
+  position: absolute;
+  top: 68%;
+  left: 0;
 }
 
 .game-slots {

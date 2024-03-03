@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Select } from "components/atoms/Select";
+// import { Select } from "components/atoms/Select";
 
 import "./BonusPopup.scss";
 
@@ -28,7 +28,7 @@ export const BonusPopup: FC = () => (
       </div>
     </button>
 
-    <Select />
+    {/* <Select /> */}
 
     <button className='bonus__start'>
       <span className='bonus__start__bg'></span>
