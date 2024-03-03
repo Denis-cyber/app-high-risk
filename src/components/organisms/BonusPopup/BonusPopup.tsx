@@ -1,5 +1,6 @@
 import { FC } from "react";
 // import { Select } from "components/atoms/Select";
+import { Checkbox } from "components/atoms/Checkbox";
 
 import "./BonusPopup.scss";
 
@@ -20,10 +21,11 @@ export const BonusPopup: FC = () => (
         </div>
 
         <div className='bonus__item__content__toggle'>
-          <img src='./assets/images/bonus/vertical-line.png' alt='vertical-line' />
+          {/* <img src='./assets/images/bonus/vertical-line.png' alt='vertical-line' />
           <div className='bonus__item__content__toggle__vector'>
             <img src='./assets/images/bonus/vector.png' alt='vector' />
-          </div>
+          </div> */}
+          <Checkbox checked={false} />
         </div>
       </div>
     </button>
