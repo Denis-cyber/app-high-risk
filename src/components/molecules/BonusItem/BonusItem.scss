@@ -1,0 +1,64 @@
+.bonus {
+  width: 310px;
+  height: 90px;
+  margin-left: -35px;
+  border: none;
+  position: relative;
+  background: none;
+  margin-bottom: 2vh; // was 5vh
+
+  &:active {
+    .bonus__start__bg {
+      background-color: #9f0400;
+      border: 2px solid #fcc211;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    // -webkit-transform: perspective(330px) rotateY(-15deg) perspective(330px) rotateX(15deg); // for future debt
+    // -webkit-transform: perspective(330px) rotateY(-15deg); // was
+    -webkit-transform: perspective(450px) rotateY(-15deg);
+    transition: 0.3s;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 3vw;
+    font-family: MerriweatherSans, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+
+    &__text {
+      max-width: 42%;
+      text-align: start;
+
+      &__title {
+        color: #ffffff;
+      }
+
+      &__description {
+        color: #fcc211;
+      }
+    }
+
+    &__toggle {
+      display: flex;
+      align-items: center;
+
+      &__vector {
+        margin-left: 4vw;
+      }
+    }
+  }
+}

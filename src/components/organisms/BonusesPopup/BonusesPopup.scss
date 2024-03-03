@@ -1,0 +1,76 @@
+@import "styles/fonts.scss";
+
+.bonuses {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180.51deg, #faff00 2.6%, #be2929 60.69%), #ff0000;
+  padding: 2vh 0 1vh; // was 2vh 0 3vh
+  border-radius: 7px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: url("~/public/assets/images/bonus/fire.png");
+    top: -28%;
+    left: 0%;
+  }
+
+  &__title {
+    font-family: Badaboom, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.06em;
+    color: #05071a;
+    margin-bottom: 2.5vh;
+  }
+
+  &__start {
+    width: 290px;
+    height: 55px;
+    border: none;
+    position: relative;
+    background: none;
+
+    &:active {
+      .bonuses__start__bg {
+        background-color: #9f0400;
+        border: 2px solid #fcc211;
+      }
+    }
+
+    &__bg {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fcc211;
+      border-radius: 12px;
+      -webkit-transform: perspective(200px) rotateX(-15deg);
+      transition: 0.3s;
+    }
+
+    &__text {
+      color: #05071a;
+      font-family: MerriweatherSans, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
+
+.welcome {
+  background: linear-gradient(263.19deg, #dd1f41 -2.11%, #6a0c1d 100%);
+}
+
+.first-deposit {
+  background: linear-gradient(256.37deg, #440079 -15.3%, #7b0260 61.75%);
+}
+
+.no-bonus {
+  background: linear-gradient(256.37deg, #006379 -15.3%, #3e027b 61.75%);
+}
