@@ -1,7 +1,8 @@
-import React, { FC, useState } from "react";
+import { FC } from "react";
 import { IBonusItem } from "types";
 import { BonusItem } from "components/molecules/BonusItem";
 import { SelectsContainer } from "components/molecules/SelectsContainer";
+import { useToggleBonuses } from "./helpers";
 
 import "./BonusesPopup.scss";
 
@@ -27,22 +28,7 @@ const bonusesItems: Array<IBonusItem> = [
 ];
 
 export const BonusesPopup: FC = () => {
-  const [activeBonus, setActiveBonus] = useState<number>(0);
-  const [showAllBonuses, setShowAllBonuses] = useState<boolean>(false);
-
-  const activeBonusToggler = (event: React.MouseEvent<HTMLElement>) => {
-    if (!event.currentTarget.dataset.id) {
-      return;
-    }
-
-    if (+event.currentTarget.dataset.id === activeBonus) {
-      setShowAllBonuses(false);
-      return;
-    }
-
-    setActiveBonus(+event.currentTarget.dataset.id);
-    setShowAllBonuses(false);
-  };
+  const [activeBonus, showAllBonuses, activeBonusHandler, setShowAllBonuses] = useToggleBonuses();
 
   return (
     <div className='bonuses'>
@@ -77,7 +63,7 @@ export const BonusesPopup: FC = () => {
             extraClassName={extraClassName}
             isCheckboxVisible={showAllBonuses}
             checked={index === activeBonus}
-            onClickHandler={activeBonusToggler}
+            onClickHandler={activeBonusHandler}
             bonusId={index}
           />
         ))}
