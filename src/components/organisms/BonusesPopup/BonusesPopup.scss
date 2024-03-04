@@ -4,17 +4,26 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(180.51deg, #faff00 2.6%, #be2929 60.69%), #ff0000;
-  padding: 2vh 0 1vh; // was 2vh 0 3vh
+  background: linear-gradient(180.51deg, #ECCC0A 2.6%, #be2929 60.69%), #ff0000;
+  padding: 2vh 0 1vh;
   border-radius: 7px;
   position: relative;
   z-index: 1;
 
   &::before {
     position: absolute;
-    content: url("~/public/assets/images/bonus/fire.png");
-    top: -28%;
+
+
+    bottom: 100%;
+    height: 78px;
+    width: 100%;
+    content: '';
+    background-image: url("~/public/assets/images/bonus/fire.png");
+    top: 0;
     left: 0%;
+    transform: translateY(-98%);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   &__title {
