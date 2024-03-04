@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(180.51deg, #ECCC0A 2.6%, #be2929 60.69%), #ff0000;
+  background: linear-gradient(180.51deg, #eccc0a 2.6%, #be2929 60.69%), #ff0000;
   padding: 2vh 0 1vh;
   border-radius: 7px;
   position: relative;
@@ -13,11 +13,10 @@
   &::before {
     position: absolute;
 
-
     bottom: 100%;
     height: 78px;
     width: 100%;
-    content: '';
+    content: "";
     background-image: url("~/public/assets/images/bonus/fire.png");
     top: 0;
     left: 0%;
@@ -68,6 +67,22 @@
       font-weight: 700;
       position: relative;
       z-index: 3;
+    }
+  }
+
+  .bonus:nth-of-type(2) {
+    .bonus__content__toggle {
+      .checkbox::before {
+        box-shadow: inset 1em 1em #440079;
+      }
+    }
+  }
+
+  .bonus:nth-of-type(3) {
+    .bonus__content__toggle {
+      .checkbox::before {
+        box-shadow: inset 1em 1em #006379;
+      }
     }
   }
 }
