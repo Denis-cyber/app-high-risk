@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
-import { Select } from "components/atoms/Select";
 import { IBonusItem } from "types";
 import { BonusItem } from "components/molecules/BonusItem";
+import { SelectsContainer } from "components/molecules/SelectsContainer";
 
 import "./BonusesPopup.scss";
 
@@ -58,7 +58,7 @@ export const BonusesPopup: FC = () => {
             onClickHandler={() => setShowAllBonuses(true)}
           />
 
-          <Select />
+          <SelectsContainer />
 
           <button className='bonuses__start'>
             <span className='bonuses__start__bg'></span>

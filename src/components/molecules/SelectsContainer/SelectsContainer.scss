@@ -1,0 +1,18 @@
+.selects {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  .select-box:nth-of-type(odd) {
+    .select-box__list {
+      width: calc(200% + 8px);
+    }
+  }
+
+  .select-box:nth-of-type(even) {
+    .select-box__list {
+      width: calc(200% + 8px);
+      left: calc(-100% - 8px);
+    }
+  }
+}
