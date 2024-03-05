@@ -19,7 +19,7 @@ const modes: Array<IMode> = [
     imgName: "promotions",
     text: "Promotions",
     extraClassName: "promotions",
-    icon: <img className='mode__img__icon' src='./assets/images/modes/promotion-icon.png' alt='prmtn-icon' />,
+    icon: <img className='mode__img__icon' src='./assets/images/modes/promotion-icon.svg' alt='prmtn-icon' />,
   },
   {
     imgName: "tournaments",

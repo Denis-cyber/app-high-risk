@@ -5,7 +5,7 @@ import { BonusesPopup } from "components/organisms/BonusesPopup";
 import "./StartPage.scss";
 
 export const StartPage: FC = () => (
-  <div className='container'>
+  <div className='start-page-container'>
     <BonusesPopup />
     <ModesContainer />
   </div>
