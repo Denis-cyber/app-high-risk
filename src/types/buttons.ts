@@ -1,4 +1,6 @@
 export enum AuthButtonsType {
   FOOTER_SIGN_IN = "FOOTER_SIGN_IN",
   FOOTER_SIGN_UP = "FOOTER_SIGN_UP",
+  MENU_REGISTER = "MENU_REGISTER",
+  MENU_LOG_IN = "MENU_LOG_IN",
 }

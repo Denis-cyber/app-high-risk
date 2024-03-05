@@ -1,9 +1,27 @@
 @import "styles/mixins.scss";
 
 .signIn {
-  @include footerBtn(0, rgba(79, 92, 105, 0.77), 35deg, #ffffff, none, ".signIn__bg");
+  @include footerBtn(127px, 55px, 14px, 0, rgba(79, 92, 105, 0.77), 35deg, #ffffff, none, ".signIn__bg");
 }
 
 .signUp {
-  @include footerBtn(5%, rgb(252, 194, 17), -35deg, #000000, 0px 0px 24px rgba(255, 77, 0, 0.87), ".signUp__bg");
+  @include footerBtn(
+    127px,
+    55px,
+    14px,
+    5%,
+    rgb(252, 194, 17),
+    -35deg,
+    #000000,
+    0px 0px 24px rgba(255, 77, 0, 0.87),
+    ".signUp__bg"
+  );
+}
+
+.register {
+  @include footerBtn(185px, 48px, 12px, 5%, rgb(252, 194, 17), -20deg, #000000, none, ".register__bg");
+}
+
+.logIn {
+  @include footerBtn(117px, 48px, 12px, 0, rgb(96, 102, 120), 20deg, #ffffff, none, ".logIn__bg");
 }

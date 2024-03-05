@@ -1,0 +1,10 @@
+.auth-btns {
+  display: flex;
+  align-items: center;
+  gap: 7%;
+  margin-bottom: 20px;
+
+  .register {
+    margin-left: 5px;
+  }
+}

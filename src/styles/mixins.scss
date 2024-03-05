@@ -5,9 +5,9 @@
   opacity: 0.9;
 }
 
-@mixin footerBtn($top, $background, $rotateX, $textColor, $boxShadow, $activeSelector) {
-  width: 127px;
-  height: 55px;
+@mixin footerBtn($width, $height, $font-size, $top, $background, $rotateX, $textColor, $boxShadow, $activeSelector) {
+  width: $width;
+  height: $height;
   border: none;
   position: relative;
   background: none;
@@ -37,7 +37,7 @@
   &__text {
     color: $textColor;
     font-family: MerriweatherSans, sans-serif;
-    font-size: 14px;
+    font-size: $font-size;
     font-weight: bold;
     position: relative;
     z-index: 3;
