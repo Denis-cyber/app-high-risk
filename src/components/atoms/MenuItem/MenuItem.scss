@@ -17,7 +17,7 @@
 
   &:active {
     opacity: 0.4;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
   }
 
   &__img {
