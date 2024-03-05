@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import classNames from "classnames";
 import { Footer } from "components/organisms/Footer";
@@ -8,13 +8,13 @@ import "./LayoutApp.scss";
 import { PATHS } from "consts";
 
 export const LayoutApp: FC = () => {
-  const { pathname } = useLocation();
+  const location = useLocation();
 
-  console.log(pathname);
+  const isMenuPath = useMemo(() => location.pathname === PATHS.MENU, [location.pathname]);
 
   return (
-    <div className={classNames("layout", pathname === PATHS.MENU && "menu-page")}>
-      <Header />
+    <div className={classNames("layout", isMenuPath && "menu-page")}>
+      <Header showExtraIcons={isMenuPath} />
       <Outlet />
       <Footer />
     </div>

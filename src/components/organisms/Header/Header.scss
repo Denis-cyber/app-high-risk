@@ -1,5 +1,21 @@
 .header {
   display: flex;
-  align-items: center;
   padding: 10px 16px;
+  justify-content: space-between; //
+
+  &__part {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__letter {
+      margin-right: 25px;
+
+      &__icon {
+        position: absolute;
+        left: -7%;
+        bottom: 50%;
+      }
+    }
+  }
 }
