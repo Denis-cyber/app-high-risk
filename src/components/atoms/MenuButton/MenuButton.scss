@@ -11,6 +11,11 @@
   align-items: center;
   justify-content: center;
 
+  &:active {
+    transform: scale(0.9);
+    transition: 0.3s;
+  }
+
   &::before {
     position: absolute;
     content: "";
