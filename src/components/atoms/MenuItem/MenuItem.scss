@@ -1,0 +1,26 @@
+@import "styles/fonts.scss";
+
+.menu-item {
+  display: flex;
+  color: #fff5d6;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(90deg, #292a37 2.37%, rgba(39, 40, 48, 0.1) 68.47%, rgba(39, 39, 46, 0) 100%);
+  border-radius: 9px;
+  font-size: 16px;
+  width: 100%;
+  padding: 8px 12px;
+  position: relative;
+  min-height: 6.5vh;
+  margin-bottom: 3px;
+
+  &__img {
+    width: 18%;
+
+    &__icon {
+      position: absolute;
+      left: 7.5%;
+      bottom: 50%;
+    }
+  }
+}

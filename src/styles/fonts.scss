@@ -16,12 +16,16 @@
 
 @font-face {
   font-family: "Badaboom";
-  src: url("~/public/assets/fonts/Badaboom/BADABB__.TTF");
+  src: url("~/public/assets/fonts/Badaboom/BADABB__.TTF") format("truetype");
+  font-weight: bold;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("~/public/assets/fonts/Poppins/Poppins-Medium.ttf");
+  src: url("~/public/assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
