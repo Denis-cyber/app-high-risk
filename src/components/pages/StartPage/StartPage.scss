@@ -1,4 +1,8 @@
 .start-page-container {
   flex: 1 1 auto;
   padding: 85px 16px 0;
+
+  @media screen and (max-height: 668px) {
+    padding-top: 65px;
+  }
 }

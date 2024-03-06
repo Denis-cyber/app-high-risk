@@ -6,6 +6,10 @@
   position: absolute;
   top: 65%;
   left: 0;
+
+  @media screen and (max-height: 668px) {
+    top: 68%;
+  }
 }
 
 .game-slots {
