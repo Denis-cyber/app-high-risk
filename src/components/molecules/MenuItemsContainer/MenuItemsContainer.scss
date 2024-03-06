@@ -1,12 +1,17 @@
 .menu-items {
   position: relative;
+  margin-top: auto;
 
-  //   &::after {
-  //     position: absolute;
-  //     content: "";
-  //     background-repeat: no-repeat;
-  //     background-image: url("~/public/assets/images/menu/bounce-bg.png");
-  //     width: 100%;
-  //     height: 100%;
-  //   }
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("~/public/assets/images/menu/bounce-bg.png");
+    width: 100%;
+    height: 100%;
+    top: 13%;
+    right: 0;
+    left: 58%;
+    background-size: contain;
+  }
 }

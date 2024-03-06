@@ -1,0 +1,29 @@
+@import "styles/fonts.scss";
+
+.search-field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+
+  &__input {
+    width: 100%;
+    background-color: #232432;
+    border-radius: 8px;
+    min-height: 5vh;
+    border: none;
+    padding-left: 12%;
+    font-family: MerriweatherSans, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #b1b1b1;
+    outline: none;
+  }
+
+  &__button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    left: 1%;
+    top: 25%;
+  }
+}
