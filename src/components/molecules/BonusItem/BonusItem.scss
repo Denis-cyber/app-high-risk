@@ -5,7 +5,7 @@
   border: none;
   position: relative;
   background: none;
-  margin-bottom: 2vh;
+  margin-bottom: 16px;
 
   &:active {
     .bonus__start__bg {
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 3vw;
+    margin-left: 12px;
     font-family: MerriweatherSans, sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -53,9 +53,14 @@
     &__toggle {
       display: flex;
       align-items: center;
+      width: 15%;
+
+      &__line {
+        margin-left: 25px;
+      }
 
       &__vector {
-        margin-left: 4vw;
+        margin-left: 10px;
       }
     }
   }

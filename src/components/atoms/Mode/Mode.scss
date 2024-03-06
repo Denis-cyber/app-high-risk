@@ -9,12 +9,12 @@
   font-size: 14px;
   font-weight: bold;
   border-radius: 7px;
-  min-width: 44vw;
-  min-height: 14vw;
+  min-width: calc(50% - 20px);
+  min-height: 52px;
 
   &__img {
     width: 25%;
-    margin-left: 3vw;
+    margin-left: 7%;
     position: relative;
 
     &__icon {

@@ -39,7 +39,11 @@ export const BonusItem: FC<IBonusItemProps> = ({
           <Checkbox checked={checked} />
         ) : (
           <>
-            <img src='./assets/images/bonus/vertical-line.png' alt='vertical-line' />
+            <img
+              className='bonus__content__toggle__line'
+              src='./assets/images/bonus/vertical-line.png'
+              alt='vertical-line'
+            />
             <div className='bonus__content__toggle__vector'>
               <img src='./assets/images/bonus/vector.png' alt='vector' />
             </div>
